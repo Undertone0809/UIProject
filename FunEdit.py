@@ -12,8 +12,24 @@ class MainOperate(QtWidgets.QWidget, Ui_Form):
 
 
     def init(self):
+
         self.treeWidget.itemClicked.connect(self.click_firstButton)
+        #widget连接
+        self.treeWidget.clicked.connect(lambda :self.onTreeClicked(1))
+        self.treeWidget_2.clicked.connect(lambda :self.onTreeClicked(2))
+        self.treeWidget_3.clicked.connect(lambda :self.onTreeClicked(3))
+
         self.setWindowIcon(QIcon("./images/folder_folder.png"))
+
+    def onTreeClicked(self,num):
+        item = self.treeWidget.currentItem()
+        #获取当前序号
+        index_top = self.treeWidget.indexOfTopLevelItem(item)
+        #根据节点序号直接调用page页面
+        if num==1:self.stackedWidget.setCurrentIndex(index_top)
+        if num==2:self.stackedWidget_2.setCurrentIndex(index_top)
+
+
 
 
     def init_setIcon(self):
