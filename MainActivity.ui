@@ -20,13 +20,40 @@
    <string>Form</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>10</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
    <item row="0" column="0">
     <widget class="QTabWidget" name="tabWidget">
+     <property name="documentMode">
+      <bool>false</bool>
+     </property>
      <widget class="QWidget" name="tab">
       <attribute name="title">
        <string>Tab 1</string>
       </attribute>
       <layout class="QGridLayout" name="gridLayout_2">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
        <item row="0" column="1">
         <widget class="QStackedWidget" name="stackedWidget">
          <property name="sizePolicy">
@@ -40,46 +67,6 @@
          </property>
          <widget class="QWidget" name="page_1_DBConnect">
           <layout class="QGridLayout" name="gridLayout_3">
-           <item row="0" column="0">
-            <widget class="QTreeWidget" name="treeWidget_3">
-             <property name="sizePolicy">
-              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-               <horstretch>1</horstretch>
-               <verstretch>0</verstretch>
-              </sizepolicy>
-             </property>
-             <column>
-              <property name="text">
-               <string>___</string>
-              </property>
-              <property name="font">
-               <font>
-                <pointsize>1</pointsize>
-               </font>
-              </property>
-             </column>
-             <item>
-              <property name="text">
-               <string>云数据库</string>
-              </property>
-              <property name="font">
-               <font>
-                <pointsize>13</pointsize>
-               </font>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>本地数据库</string>
-              </property>
-              <property name="font">
-               <font>
-                <pointsize>13</pointsize>
-               </font>
-              </property>
-             </item>
-            </widget>
-           </item>
            <item row="0" column="1">
             <widget class="QStackedWidget" name="stackedWidget_2">
              <property name="sizePolicy">
@@ -271,6 +258,58 @@
              <widget class="QWidget" name="page_8"/>
             </widget>
            </item>
+           <item row="0" column="0">
+            <widget class="QTreeWidget" name="treeWidget_3">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+               <horstretch>1</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>15</width>
+               <height>15</height>
+              </size>
+             </property>
+             <property name="animated">
+              <bool>false</bool>
+             </property>
+             <attribute name="headerHighlightSections">
+              <bool>false</bool>
+             </attribute>
+             <column>
+              <property name="text">
+               <string>___</string>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>1</pointsize>
+               </font>
+              </property>
+             </column>
+             <item>
+              <property name="text">
+               <string>云数据库</string>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>13</pointsize>
+               </font>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>本地数据库</string>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>13</pointsize>
+               </font>
+              </property>
+             </item>
+            </widget>
+           </item>
           </layout>
          </widget>
          <widget class="QWidget" name="page_1_ConnnectionMethod">
@@ -346,9 +385,33 @@
            <verstretch>0</verstretch>
           </sizepolicy>
          </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="autoFillBackground">
+          <bool>true</bool>
+         </property>
+         <property name="lineWidth">
+          <number>1</number>
+         </property>
+         <property name="midLineWidth">
+          <number>0</number>
+         </property>
+         <property name="autoScrollMargin">
+          <number>16</number>
+         </property>
+         <property name="animated">
+          <bool>true</bool>
+         </property>
+         <property name="allColumnsShowFocus">
+          <bool>false</bool>
+         </property>
+         <property name="headerHidden">
+          <bool>false</bool>
+         </property>
          <column>
           <property name="text">
-           <string>_________</string>
+           <string>__________________________________________________________________________________________</string>
           </property>
           <property name="font">
            <font>
@@ -442,6 +505,8 @@
    </item>
   </layout>
  </widget>
- <resources/>
+ <resources>
+  <include location="all_image.qrc"/>
+ </resources>
  <connections/>
 </ui>
